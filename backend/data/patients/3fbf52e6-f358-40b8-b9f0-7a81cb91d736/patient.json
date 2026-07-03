@@ -1,0 +1,143 @@
+{
+  "uuid": "3fbf52e6-f358-40b8-b9f0-7a81cb91d736",
+  "patient_id": "PAT0005",
+  "group": "B",
+  "created_date": "2026-07-03T21:09:15.664507",
+  "updated_date": "2026-07-03T21:09:15.664507",
+  "status": "IN_PROGRESS",
+  "name": "Aman",
+  "age_group": "24",
+  "gender": "Male",
+  "phone": "7350395287",
+  "address": "NA",
+  "additional_details": {
+    "smoking": "NA",
+    "alcohol_consumption": "NA",
+    "chewing_habit": "NA",
+    "medical_condition": "NA",
+    "allergies": "NA",
+    "notes": "NA"
+  },
+  "fingerprints": {
+    "right_thumb": {
+      "image_filename": "right_thumb.jpg",
+      "image_path": "C:\\Users\\athar\\OneDrive\\Desktop\\M\\LM-data-collection-app-main\\backend\\data\\patients\\3fbf52e6-f358-40b8-b9f0-7a81cb91d736\\right_thumb.jpg",
+      "annotated_image_path": "C:\\Users\\athar\\OneDrive\\Desktop\\M\\LM-data-collection-app-main\\backend\\data\\patients\\3fbf52e6-f358-40b8-b9f0-7a81cb91d736\\right_thumb_annotated.jpg",
+      "pattern": "Whorl",
+      "confidence": 100.0,
+      "core_x": 47,
+      "core_y": 57,
+      "delta_x": 43,
+      "delta_y": 33,
+      "ridge_count": 11
+    },
+    "right_index": {
+      "image_filename": "right_index.jpg",
+      "image_path": "C:\\Users\\athar\\OneDrive\\Desktop\\M\\LM-data-collection-app-main\\backend\\data\\patients\\3fbf52e6-f358-40b8-b9f0-7a81cb91d736\\right_index.jpg",
+      "annotated_image_path": "C:\\Users\\athar\\OneDrive\\Desktop\\M\\LM-data-collection-app-main\\backend\\data\\patients\\3fbf52e6-f358-40b8-b9f0-7a81cb91d736\\right_index_annotated.jpg",
+      "pattern": "Whorl",
+      "confidence": 100.0,
+      "core_x": 51,
+      "core_y": 38,
+      "delta_x": 45,
+      "delta_y": 56,
+      "ridge_count": 5
+    },
+    "right_middle": {
+      "image_filename": "right_middle.jpg",
+      "image_path": "C:\\Users\\athar\\OneDrive\\Desktop\\M\\LM-data-collection-app-main\\backend\\data\\patients\\3fbf52e6-f358-40b8-b9f0-7a81cb91d736\\right_middle.jpg",
+      "annotated_image_path": "C:\\Users\\athar\\OneDrive\\Desktop\\M\\LM-data-collection-app-main\\backend\\data\\patients\\3fbf52e6-f358-40b8-b9f0-7a81cb91d736\\right_middle_annotated.jpg",
+      "pattern": "Loop",
+      "confidence": 100.0,
+      "core_x": 49,
+      "core_y": 28,
+      "delta_x": 45,
+      "delta_y": 48,
+      "ridge_count": 7
+    },
+    "right_ring": {
+      "image_filename": "right_ring.jpg",
+      "image_path": "C:\\Users\\athar\\OneDrive\\Desktop\\M\\LM-data-collection-app-main\\backend\\data\\patients\\3fbf52e6-f358-40b8-b9f0-7a81cb91d736\\right_ring.jpg",
+      "annotated_image_path": "C:\\Users\\athar\\OneDrive\\Desktop\\M\\LM-data-collection-app-main\\backend\\data\\patients\\3fbf52e6-f358-40b8-b9f0-7a81cb91d736\\right_ring_annotated.jpg",
+      "pattern": "Whorl",
+      "confidence": 100.0,
+      "core_x": 50,
+      "core_y": 31,
+      "delta_x": 46,
+      "delta_y": 16,
+      "ridge_count": 8
+    },
+    "right_little": {
+      "image_filename": "right_little.jpg",
+      "image_path": "C:\\Users\\athar\\OneDrive\\Desktop\\M\\LM-data-collection-app-main\\backend\\data\\patients\\3fbf52e6-f358-40b8-b9f0-7a81cb91d736\\right_little.jpg",
+      "annotated_image_path": "C:\\Users\\athar\\OneDrive\\Desktop\\M\\LM-data-collection-app-main\\backend\\data\\patients\\3fbf52e6-f358-40b8-b9f0-7a81cb91d736\\right_little_annotated.jpg",
+      "pattern": "Whorl",
+      "confidence": 100.0,
+      "core_x": 52,
+      "core_y": 33,
+      "delta_x": 47,
+      "delta_y": 42,
+      "ridge_count": 7
+    },
+    "left_thumb": {
+      "image_filename": "left_thumb.jpg",
+      "image_path": "C:\\Users\\athar\\OneDrive\\Desktop\\M\\LM-data-collection-app-main\\backend\\data\\patients\\3fbf52e6-f358-40b8-b9f0-7a81cb91d736\\left_thumb.jpg",
+      "annotated_image_path": "C:\\Users\\athar\\OneDrive\\Desktop\\M\\LM-data-collection-app-main\\backend\\data\\patients\\3fbf52e6-f358-40b8-b9f0-7a81cb91d736\\left_thumb_annotated.jpg",
+      "pattern": "Arch",
+      "confidence": 100.0,
+      "core_x": 50,
+      "core_y": 50,
+      "delta_x": 47,
+      "delta_y": 45,
+      "ridge_count": 3
+    },
+    "left_index": {
+      "image_filename": "left_index.jpg",
+      "image_path": "C:\\Users\\athar\\OneDrive\\Desktop\\M\\LM-data-collection-app-main\\backend\\data\\patients\\3fbf52e6-f358-40b8-b9f0-7a81cb91d736\\left_index.jpg",
+      "annotated_image_path": "C:\\Users\\athar\\OneDrive\\Desktop\\M\\LM-data-collection-app-main\\backend\\data\\patients\\3fbf52e6-f358-40b8-b9f0-7a81cb91d736\\left_index_annotated.jpg",
+      "pattern": "Arch",
+      "confidence": 100.0,
+      "core_x": 52,
+      "core_y": 37,
+      "delta_x": 48,
+      "delta_y": 37,
+      "ridge_count": 1
+    },
+    "left_middle": {
+      "image_filename": "left_middle.jpg",
+      "image_path": "C:\\Users\\athar\\OneDrive\\Desktop\\M\\LM-data-collection-app-main\\backend\\data\\patients\\3fbf52e6-f358-40b8-b9f0-7a81cb91d736\\left_middle.jpg",
+      "annotated_image_path": "C:\\Users\\athar\\OneDrive\\Desktop\\M\\LM-data-collection-app-main\\backend\\data\\patients\\3fbf52e6-f358-40b8-b9f0-7a81cb91d736\\left_middle_annotated.jpg",
+      "pattern": "Arch",
+      "confidence": 100.0,
+      "core_x": 50,
+      "core_y": 37,
+      "delta_x": 52,
+      "delta_y": 24,
+      "ridge_count": 5
+    },
+    "left_ring": {
+      "image_filename": "left_ring.jpg",
+      "image_path": "C:\\Users\\athar\\OneDrive\\Desktop\\M\\LM-data-collection-app-main\\backend\\data\\patients\\3fbf52e6-f358-40b8-b9f0-7a81cb91d736\\left_ring.jpg",
+      "annotated_image_path": "C:\\Users\\athar\\OneDrive\\Desktop\\M\\LM-data-collection-app-main\\backend\\data\\patients\\3fbf52e6-f358-40b8-b9f0-7a81cb91d736\\left_ring_annotated.jpg",
+      "pattern": "Whorl",
+      "confidence": 100.0,
+      "core_x": 50,
+      "core_y": 28,
+      "delta_x": 49,
+      "delta_y": 12,
+      "ridge_count": 8
+    },
+    "left_little": {
+      "image_filename": "left_little.jpg",
+      "image_path": "C:\\Users\\athar\\OneDrive\\Desktop\\M\\LM-data-collection-app-main\\backend\\data\\patients\\3fbf52e6-f358-40b8-b9f0-7a81cb91d736\\left_little.jpg",
+      "annotated_image_path": "C:\\Users\\athar\\OneDrive\\Desktop\\M\\LM-data-collection-app-main\\backend\\data\\patients\\3fbf52e6-f358-40b8-b9f0-7a81cb91d736\\left_little_annotated.jpg",
+      "pattern": "Arch",
+      "confidence": 100.0,
+      "core_x": 50,
+      "core_y": 43,
+      "delta_x": 49,
+      "delta_y": 21,
+      "ridge_count": 10
+    }
+  }
+}

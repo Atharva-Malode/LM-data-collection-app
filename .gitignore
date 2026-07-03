@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Next.js
+frontend/.next/
+frontend/node_modules/
+
+# Logs
+*.log
+
+# Do not upload these projects
+AI-ML/
+fingerprint/
+
+.DS_Store
