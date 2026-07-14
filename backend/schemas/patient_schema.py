@@ -5,6 +5,9 @@ from .fingerprint_schema import FingerprintFrontend, FingerprintDatabase
 
 class AdditionalDetailsJSON(BaseModel):
     """Additional medical/lifestyle details stored in patient.json."""
+    hba1c_level: str = "NA"
+    clinical_attachment_level: str = "NA"
+    probing_depth: str = "NA"
     smoking: str = "NA"
     alcohol_consumption: str = "NA"
     chewing_habit: str = "NA"
@@ -48,6 +51,9 @@ class PatientSaveRequest(BaseModel):
     address: str = ""
     
     # Additional Details
+    hba1cLevel: str = ""
+    clinicalAttachmentLevel: str = ""
+    probingDepth: str = ""
     smoking: str = ""
     alcoholConsumption: str = ""
     medicalCondition: str = ""

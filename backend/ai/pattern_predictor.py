@@ -7,7 +7,7 @@ try:
     from torchvision import transforms
     import torch.nn.functional as F
     HAS_TORCH = True
-except ImportError:
+except (ImportError, Exception):
     HAS_TORCH = False
 
 import cv2

@@ -44,6 +44,9 @@ export interface PatientRecord {
   address: string;
   
   // Additional Info
+  hba1cLevel?: string;
+  clinicalAttachmentLevel?: string;
+  probingDepth?: string;
   smoking: string;
   alcoholConsumption: string;
   medicalCondition: string; // From new-patient, diabetes/etc in edit

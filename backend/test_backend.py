@@ -93,6 +93,9 @@ def test_patient_crud(client):
         "birthDate": "1996-01-01",
         "phoneNumber": "9876543210",
         "address": "123 Bio Street",
+        "hba1cLevel": "5.7%",
+        "clinicalAttachmentLevel": "3 mm",
+        "probingDepth": "4 mm",
         "smoking": "No",
         "alcoholConsumption": "Occasional",
         "medicalCondition": "None",
@@ -127,12 +130,13 @@ def test_patient_crud(client):
     print(f"[OK] Saved patient. Generated ID: {patient_record['patient_id']}")
     
     # Verify image was saved
-    left_thumb_path = os.path.join(BASE_DIR, "data", "patients", test_uuid, "left_thumb.jpg")
+    data_dir = os.environ.get("FING_DATA_DIR", os.path.join(BASE_DIR, "data"))
+    left_thumb_path = os.path.join(data_dir, "patients", test_uuid, "left_thumb.jpg")
     assert os.path.exists(left_thumb_path), "Fingerprint image file was not saved to disk!"
     print("[OK] Verified fingerprint image decoded and saved to disk.")
     
     # Verify Excel was saved
-    excel_path = os.path.join(BASE_DIR, "data", "patients.xlsx")
+    excel_path = os.path.join(data_dir, "patients.xlsx")
     assert os.path.exists(excel_path), "patients.xlsx index sheet was not created!"
     print("[OK] Verified patients.xlsx index updated.")
 
@@ -144,6 +148,9 @@ def test_patient_crud(client):
     assert get_data["success"] is True
     record = get_data["data"]
     assert record["patientName"] == "John Doe Test"
+    assert record["hba1cLevel"] == "5.7%"
+    assert record["clinicalAttachmentLevel"] == "3 mm"
+    assert record["probingDepth"] == "4 mm"
     # Check absolute image path serving
     left_thumb_image_url = record["fingerprintData"]["Left Thumb"]["image"]
     assert left_thumb_image_url.startswith("http://"), f"Image URL is not absolute: {left_thumb_image_url}"
@@ -178,7 +185,7 @@ def test_patient_crud(client):
 
     # Clean up test files so we don't dirty the working directories
     print("Cleaning up test patient files...")
-    folder_path = os.path.join(BASE_DIR, "data", "patients", test_uuid)
+    folder_path = os.path.join(data_dir, "patients", test_uuid)
     if os.path.exists(folder_path):
         import shutil
         shutil.rmtree(folder_path)

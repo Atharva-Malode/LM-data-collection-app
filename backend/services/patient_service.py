@@ -95,6 +95,9 @@ class PatientService:
 
         # Set up patient additional details
         additional_details = AdditionalDetailsJSON(
+            hba1c_level=clean_val(payload.hba1cLevel),
+            clinical_attachment_level=clean_val(payload.clinicalAttachmentLevel),
+            probing_depth=clean_val(payload.probingDepth),
             smoking=clean_val(payload.smoking),
             alcohol_consumption=clean_val(payload.alcoholConsumption),
             chewing_habit=clean_val(payload.chewingHabit),
@@ -283,6 +286,9 @@ class PatientService:
             "birthDate": "",
             "phoneNumber": patient.phone,
             "address": patient.address,
+            "hba1cLevel": patient.additional_details.hba1c_level,
+            "clinicalAttachmentLevel": patient.additional_details.clinical_attachment_level,
+            "probingDepth": patient.additional_details.probing_depth,
             "smoking": patient.additional_details.smoking,
             "alcoholConsumption": patient.additional_details.alcohol_consumption,
             "medicalCondition": patient.additional_details.medical_condition,
@@ -302,6 +308,9 @@ class PatientService:
             "created_date": patient.created_date,
             "updated_date": patient.updated_date,
             "additional_details": {
+                "hba1c_level": patient.additional_details.hba1c_level,
+                "clinical_attachment_level": patient.additional_details.clinical_attachment_level,
+                "probing_depth": patient.additional_details.probing_depth,
                 "smoking": patient.additional_details.smoking,
                 "alcohol_consumption": patient.additional_details.alcohol_consumption,
                 "chewing_habit": patient.additional_details.chewing_habit,

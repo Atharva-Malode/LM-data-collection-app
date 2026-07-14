@@ -15,3 +15,5 @@ AI-ML/
 fingerprint/
 
 .DS_Store
+
+backend/venv

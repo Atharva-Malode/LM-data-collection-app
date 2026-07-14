@@ -55,6 +55,15 @@ export function PatientForm({ data, onChange }: PatientFormProps) {
       </AccordionCard>
 
       <AccordionCard title="Additional Information">
+        <FormField label="HbA1c Level" full>
+          <input name="hba1cLevel" value={data.hba1cLevel || ''} onChange={handleChange} className={inputCls} placeholder="e.g. 5.7%" />
+        </FormField>
+        <FormField label="Clinical Attachment Level">
+          <input name="clinicalAttachmentLevel" value={data.clinicalAttachmentLevel || ''} onChange={handleChange} className={inputCls} placeholder="e.g. 3 mm" />
+        </FormField>
+        <FormField label="Probing Depth">
+          <input name="probingDepth" value={data.probingDepth || ''} onChange={handleChange} className={inputCls} placeholder="e.g. 4 mm" />
+        </FormField>
         <FormField label="Smoking">
           <select name="smoking" value={data.smoking || ''} onChange={handleChange} className={selectCls}>
             <option value="">Select</option>
