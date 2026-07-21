@@ -58,6 +58,8 @@ export interface PatientRecord {
   caseNumber?: string;
   agency?: string;
   captureDate: string;
+
+  status?: string;
   
   // Fingerprints
   fingerprintData: Record<string, FingerData>; // keyed by FingerName or ID
